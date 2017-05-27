@@ -45,7 +45,7 @@ Each of the following sections provide an implementation overview and detailed, 
 1. You will see a text editor. Remove all the placeholder code.
 
 1. Copy the code below
-2. 
+
 ```
 {
   "SuperHero": "Superman",
