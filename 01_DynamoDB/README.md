@@ -36,15 +36,15 @@ Each of the following sections provide an implementation overview and detailed, 
 
 ### 3. Insert Amazon DynamoDB Records
 
-1. Click the **Items** tab, then click **Create item**.
+- Click the **Items** tab, then click **Create item**.
  
-1. System will pop up new window
+- System will pop up new window
  
-1. At the top left of your screen, switch to **Text** mode 
+- At the top left of your screen, switch to **Text** mode 
 
-1. You will see a text editor. Remove all the placeholder code.
+- You will see a text editor. Remove all the placeholder code.
 
-1. Copy the code below
+- Copy the code below
 
 ```
 {
@@ -55,11 +55,11 @@ Each of the following sections provide an implementation overview and detailed, 
 }
 ```
 
-1. Paste the code into the editor
+- Paste the code into the editor
 
-1. Click **Save**
+- Click **Save**
 
-1. Repeat the above steps with below items
+- Repeat the above steps with below items
 
 
 ```
