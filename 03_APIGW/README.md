@@ -122,21 +122,21 @@ For more information about CORS configurations in general, see [https://develope
 
 ### 7. Test API
 
-1. You can use browser plugin to test RESTful Webservice in API Gateway
+- You can use browser plugin to test RESTful Webservice in API Gateway
 
-1. If you don't have any RESTful API client, you can download and install one 
- - Firefox: [RESTClient](https://addons.mozilla.org/en-US/firefox/addon/restclient/)
- - Chrome: [Advanced REST client] (https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo) or [Postman] (https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
+- If you don't have any RESTful API client, you can download and install one   
+  - Firefox: [RESTClient](https://addons.mozilla.org/en-US/firefox/addon/restclient/)   
+  - Chrome: [Advanced REST client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo) or [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
 
-1. Test **getheroeslist** API
- - Method: **POST**
- - URL: Your API Gateway **Invoke URL** with **getheroeslist** (ex. https://zxxxxxxxxx.execute-api.us-east-1.amazonaws.com/prod/getheroeslist)
- - Invoke the URL
- - You will expect **200** HTTP response code with list of superheroes in the **response body**
+- Test **getheroeslist** API
+  - Method: **POST**   
+  - URL: Your API Gateway **Invoke URL** with **getheroeslist** (ex. https://zxxxxxxxxx.execute-api.us-east-1.amazonaws.com/prod/getheroeslist)   
+  - Invoke the URL   
+  - You will expect **200** HTTP response code with list of superheroes in the **response body**
 
-1. Test **getmissiondetails** API
- - Method: **POST**
- - URL: Your API Gateway **Invoke URL** with **getmissiondetails** (ex. https://zxxxxxxxxx.execute-api.us-east-1.amazonaws.com/prod/getmissiondetails)
- - Request Body: `{"superhero": "Superman"}`
- - Invoke the URL
- - You will expect **200** HTTP response code with detail information of related superhero in the **response body**
+- Test **getmissiondetails** API   
+   - Method: **POST**   
+   - URL: Your API Gateway **Invoke URL** with **getmissiondetails** (ex. https://zxxxxxxxxx.execute-api.us-east-1.amazonaws.com/prod/getmissiondetails)   
+   - Request Body: `{"superhero": "Superman"}`
+   - Invoke the URL
+   - You will expect **200** HTTP response code with detail information of related superhero in the **response body**
