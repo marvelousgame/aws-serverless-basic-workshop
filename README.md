@@ -28,8 +28,9 @@ You will need a local text editor for making minor updates to configuration file
 
 This workshop is broken up into multiple modules. You must complete each module before proceeding to the next.
 
-1. Persistence Layer - Amazon DynamoDB
-2. Serverless Backend - AWS Lambda
-3. RESTful API - Amazon API Gateway
+1. [Persistence Layer - Amazon DynamoDB](01_DynamoDB)
+2. [Serverless Backend - AWS Lambda](02_Lambda)
+3. [RESTful API - Amazon API Gateway](03_APIGW)
+4. [Static Website - Amazon S3](04_S3)
 
 After you have completed the workshop you can delete all of the resources that were created by following the **CleanUp** guide.
