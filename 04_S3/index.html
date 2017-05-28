@@ -133,7 +133,12 @@
 
             document.getElementById("missionstatus").value = dataoutput.MissionStatus.S;
 
-            document.getElementById("missiondossier").value = dataoutput.Villain1.S + "\n" + dataoutput.Villain2.S + "\n" + dataoutput.Villain3.S + "\n";
+            var villains="";
+            for(i=0; i<dataoutput.Villains.L.length; i++){
+                  villains += dataoutput.Villains.L[i].S + "\n";              
+            }
+
+            document.getElementById("missiondossier").value = villains + "\n";
 
         }).catch( function(result){
 

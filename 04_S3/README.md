@@ -29,14 +29,11 @@ Each of the following sections provide an implementation overview and detailed, 
 
 1. Open the directory (your Downloads folder) and extract the contents of the ZIP to your local computer
 
-1. Next, you will retrieve an HTML page that you will use to test your API. Go to [here](index.html)
+1. Next, you will retrieve an HTML page that you will use to test your API. Go to [index.html](index.html)
 
-1. Save the HTML file as **index.html**  
-**Important**: When you save the index.html file, make sure you save it as a web page "HTML only". You only need the HTML of this page.
+1. Copy the content, save it as  **index.html** to your local computer previously extracted **apiGateway-js sdk** folder
 
-1. On your local computer, copy the **index.html** file and paste it into the extracted **apiGateway-js sdk** folder. Recall that you downloaded the ZIP file and extracted the contents to your local computer in previous steps.
-
-1. Open index.html in your browser
+1. Open **index.html** in your browser
 
 1. Using the index web page, retrieve mission details. Review the output.
 
