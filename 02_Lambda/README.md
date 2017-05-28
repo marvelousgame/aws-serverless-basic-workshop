@@ -124,8 +124,7 @@ Use the IAM console to create a new role. You'll need to attach policies that gr
 
 1. In the editor, remove all of the placeholder code
 
-1. Copy the code below, and paste it into the editor. This code will look for details of Batman's mission in the DynamoDB table.
-1. 
+1. Copy the code below, and paste it into the editor. This code will look for details of Batman's mission in the DynamoDB table.   
 ```
 {"superhero": "Batman"}
 ```
