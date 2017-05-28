@@ -45,47 +45,69 @@ Each of the following sections provide an implementation overview and detailed, 
 
 - Type a bucket name. Note that your bucket name must be unique. 
 
-- For **Region**, click **US Standard**
+- For **Region**, click **US East (N.Virginia)**
 
-- Click **Create**
+- On **Set Properties**, Click **Next**
 
-- Click your bucket to open it, then click the **Properties** tab (at top right).
+- On **Set permissions**, Click **Next**
 
-- In the **Permissions** section, click **Add Bucket Policy**.
+- On **Review**, Click **Next**
 
-- Copy the following bucket policy and paste it into editor.
+- Click **Create Bucket**
+
+- Click your bucket to open it
+
+- Click **Permissions** tab
+
+- Click **Bucket Policy**
+
+- Enter the following policy document into the bucket policy editor replacing YOUR\_BUCKET_NAME with the name of the bucket you created:
 
 ```
-{
-"Version": "2012-10-17",  
-"Statement": [   
-{"Sid": "PublicReadForGetBucketObjects",
-"Effect": "Allow",
-"Principal": "*",
-"Action": "s3:GetObject",
-"Resource": "arn:aws:s3:::<my-unique-bucket-name>/*"
-}
-]
-}
+{   
+    "Version": "2012-10-17",   
+    "Statement": [   
+        {   
+            "Effect": "Allow",   
+            "Principal": "*",   
+            "Action": "s3:GetObject",   
+            "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*"   
+        }   
+    ]   
+}   
 ```
 
-- Replace **<my-unique-bucket-name>** with the name of your bucket.
+- Click **Save**
 
-- Click **save**
+- Click **Properties** tab
+
+- Choose **Static website hosting**
+
+- Choose **Use this bucket to host a website**
+
+- Take a note of **Endpoint** URL (ex. http://mybucket.s3-website-us-east-1.amazonaws.com)
+
+- On Index Document, type **index.html**   
+
+![Static Website screenshot](../images/enable-website-hosting.png)
+
+- Click **Save**
+
+- Click **Objects** tab
 
 - Click **Upload** (at the top left)
 
-- Open the folder where you saved the Javascript SDK
+- Click **Add files**
 
-- Select the **apiGateway-js-sdk** folder
+- Open the **apiGateway-js-sdk** folder where you saved the Javascript SDK and index.html
 
-- Drag and drop the whole folder into the Console target area (you will see a section labeled "Drag and drop files and folders to upload here").
+- Upload all files (including subfolder) to S3 bucket. Note that you might need to create subfolder separately in S3 console. You also might consider using:
+	- FTP client (ex. cyberduck, cloudberry, crossftp) 
+	- AWS CLI 
 
-- Click **Start Upload**. Wait until the upload is complete
+- After you completed the upload, open a new browser tab/window.
 
-- Open a new browser tab/window.
+- Navigate to the **Endpoint** URL that you copied at previous step.
+`http://<my-unique-bucket-name>.s3-website-us-east-1.amazonaws.com`
 
-- Navigate to the following URL, replacing **<my-unique-bucket-name>** with the name of your S3 bucket.
-`http://<my-unique-bucket-name>.s3-website-us-east-1.amazonaws.com/apiGateway-js-sdk/index.html  `
-
-- You can now look up data stored in your DynamoDB database.
+- You can now hosting website in S3 to look up data stored in your DynamoDB database using API Gateway and Lambda function.
