@@ -129,4 +129,4 @@ Use the IAM console to create a new role. You'll need to attach policies that gr
 {"superhero": "Batman"}
 ```
 
-1. You will see a message telling you that **Execution Result: Succeeded.** You will see a text box displaying mission details for Batman.
+18. You will see a message telling you that **Execution Result: Succeeded.** You will see a text box displaying mission details for Batman.
