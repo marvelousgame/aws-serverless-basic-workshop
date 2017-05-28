@@ -29,7 +29,7 @@ Each of the following sections provide an implementation overview and detailed, 
 
 1. Open the directory (your Downloads folder) and extract the contents of the ZIP to your local computer
 
-1. Next, you will retrieve an HTML page that you will use to test your API. Go to [https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl134-dynamodb-webapp-part3/static/index.html] (https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl134-dynamodb-webapp-part3/static/index.html)
+1. Next, you will retrieve an HTML page that you will use to test your API. Go to [here](index.html)
 
 1. Save the HTML file as **index.html**  
 **Important**: When you save the index.html file, make sure you save it as a web page "HTML only". You only need the HTML of this page.
