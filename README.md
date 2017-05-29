@@ -5,7 +5,7 @@ In this workshop you'll deploy a simple RESTfull webservice that enables users t
 The application architecture uses [AWS Lambda](https://aws.amazon.com/lambda/), [Amazon API Gateway](https://aws.amazon.com/api-gateway/), and [Amazon DynamoDB](https://aws.amazon.com/dynamodb/). Client will execute a public backend REST API built using API Gateway and Lambda. DynamoDB provides a  persistence layer where data can be stored by the API's Lambda function.
 
 See the diagram below for a depiction of the complete architecture.
-
+![Serverless Basic Architecture](images/complete-architecture.png)
 
 ## Prerequisites
 
