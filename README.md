@@ -1,4 +1,4 @@
-# AWS Serverless (HOL) Hands On Lab
+# AWS Serverless Basic Workshop
 
 In this workshop you'll deploy a simple RESTfull webservice that enables users to request **Super Heroes** data from the backend system.
 ![Super Heroes](images/super-heroes.jpg)
