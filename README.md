@@ -36,4 +36,4 @@ This workshop is broken up into multiple modules. You must complete each module 
 3. [RESTful API - Amazon API Gateway](03_APIGW)
 4. [Static Website - Amazon S3](04_S3)
 
-After you have completed the workshop you can delete all of the resources that were created by following the **CleanUp** guide.
+After you have completed the workshop you can delete all of the resources that were created by following the [Cleanup](09_Cleanup) guide.
